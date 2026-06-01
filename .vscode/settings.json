@@ -1,0 +1,11 @@
+{
+  // Make VS Code (and the Python extension) use the project venv.
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+  // Make the Code Runner ▶ button use the venv's Python instead of the global one.
+  "code-runner.executorMap": {
+    "python": "& \"$workspaceRoot\\.venv\\Scripts\\python.exe\" -u $fullFileName"
+  },
+  // Run in the integrated terminal so interactive prompts (input(), GUI) work.
+  "code-runner.runInTerminal": true
+}

@@ -1,0 +1,14 @@
+# Python virtual environment — recreate it per machine, don't commit it
+.venv/
+venv/
+
+# Browser user-data dirs created at runtime (large, machine-specific, may hold a logged-in session)
+**/scraper_profile/
+**/brave_profile/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Generated output workbooks
+*.xlsx
